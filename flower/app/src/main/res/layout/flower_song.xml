@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/abc_action_bar_default_height_material">
+
+    <com.daimajia.slider.library.SliderLayout
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        custom:auto_cycle="true"
+        custom:indicator_visibility="visible"
+        custom:pager_animation="Accordion"
+        custom:pager_animation_span="1100" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/slider"
+        android:scrollbars="none"
+      >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:background="@color/appbackcolor"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/txtheadingtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/appbackcolor"
+                android:scrollbarStyle="insideOverlay"
+                android:textColor="@color/PrimarytxtColor"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:text="The Significance of Flowers"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtdesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtheadingtxt"
+                android:layout_centerHorizontal="true"
+                android:scrollbarStyle="insideOverlay"
+                android:textColor="@color/PrimarytxtColor"
+                android:textSize="18sp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:text="-"
+                />
+
+            <TextView
+                android:id="@+id/txtmother"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/txtdesc"
+                android:textColor="@color/PrimarytxtColor"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:text="-" />
+
+           <!-- <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/txtmother"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="05dp"
+                android:paddingBottom="20dp"
+                android:text="Browse the Flowers"
+                android:textAppearance="?android:attr/textAppearanceMedium" />-->
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

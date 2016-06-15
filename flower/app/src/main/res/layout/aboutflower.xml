@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/allview"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/abc_action_bar_default_height_material"
+        android:background="#ffffff"
+        android:visibility="visible">
+
+        <ScrollView
+            android:id="@+id/swipess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/txtheadings"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="20dp"
+                    >
+
+
+
+                    <TextView
+                        android:id="@+id/txtdescript"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/appbackcolor"
+                        android:scrollbarStyle="insideOverlay"
+                        android:text=""
+                        android:textColor="@color/PrimarytxtColor"
+                        android:textSize="18sp"
+                        android:layout_below="@+id/txtheading"
+                         />
+
+                    <TextView
+                        android:id="@+id/txtsubtitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtdescript"
+                        android:background="@color/appbackcolor"
+                        android:scrollbarStyle="insideOverlay"
+                        android:textColor="@color/PrimarytxtColor"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:text="About this compilation\n"
+                         />
+
+                    <TextView
+                        android:id="@+id/txtsubtitledesc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtsubtitle"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/appbackcolor"
+                        android:scrollbarStyle="insideOverlay"
+                        android:text="About this compilation\n"
+                        android:textColor="@color/PrimarytxtColor"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:id="@+id/txtheading"
+                        android:textColor="@color/PrimarytxtColor"
+                        android:textSize="20sp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/imgsriaur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="245dp"
+                    android:background="@drawable/mother" />
+
+                <TextView
+                    android:id="@+id/txtheadings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_below="@+id/imgsriaur"
+                    android:text=""
+                    android:textColor="@color/PrimarytxtColor"
+                    android:textSize="20sp"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>
+
+
+
+

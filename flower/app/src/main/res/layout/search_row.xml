@@ -1,0 +1,44 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/feed_bg"
+    android:orientation="vertical"
+    tools:ignore="overdraw">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_parent_rounded_corner"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/TxtViewflowerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:paddingTop="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/link"
+            tools:ignore="UnusedAttribute" />
+
+        <ImageView
+            android:id="@+id/ImgFlowThmb"
+            android:layout_width="320dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/placeholders"
+            android:layout_below="@+id/TxtViewflowerName"
+            android:scaleType="fitXY"
+            android:visibility="visible" />
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Imagloadpb"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

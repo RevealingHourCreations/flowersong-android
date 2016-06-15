@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/abc_action_bar_default_height_material"
+    android:layout_height="match_parent">
+
+<ListView
+    android:id="@+id/FlowerList"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/feed_bg"
+    android:clipToPadding="false"
+    android:divider="@null"
+    android:dividerHeight="8dp"
+    android:fadingEdge="none"
+    android:fitsSystemWindows="true"
+    android:padding="12dp"
+    android:animationCache="false"
+    android:scrollingCache="false"
+    android:scrollbarStyle="outsideOverlay"
+    tools:ignore="overdraw" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:visibility="invisible" />
+</RelativeLayout>

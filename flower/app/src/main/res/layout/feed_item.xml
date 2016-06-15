@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/feed_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/linearmain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ImgFlower"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@drawable/placeholders"
+            android:scaleType="fitXY" />
+
+        <ProgressBar
+            android:id="@+id/mainimgprogress"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mainrelative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearmain"
+        android:background="@color/appbackcolor"
+        android:padding="07dp">
+
+
+        <TextView
+            android:id="@+id/txtWikipedia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="03dp"
+            android:gravity="center"
+            android:text="Wikimedia Commons"
+            android:textColor="@color/PrimarytxtColor"
+            android:textSize="@dimen/fontSemiBoSize"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txtname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtWikipedia"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="02dp"
+            android:gravity="center"
+            android:paddingBottom="02dp"
+            android:text=""
+            android:textColor="@color/PrimarytxtColor"
+            android:textSize="@dimen/bigfontsize"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtsubname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtname"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingBottom="02dp"
+            android:text=""
+            android:textColor="@color/PrimarytxtColor"
+            android:textSize="@dimen/bigfontsize"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/MainLinearDesc"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/txtsubname"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/feed_item_padding_top_bottom">
+
+            <TextView
+                android:id="@+id/txtsigm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="07dp"
+                android:paddingTop="@dimen/feed_item_status_pad_top"
+                android:paddingLeft="@dimen/feed_item_padding_left_right"
+                android:text="Significance given by the Mother"
+                android:textAllCaps="true"
+                android:textColor="@color/PrimarytxtColor"
+                android:textSize="@dimen/feed_item_profile_name"
+                />
+
+            <TextView
+                android:id="@+id/txtSignificanceMainfeed"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/feed_item_status_pad_top"
+                android:paddingLeft="@dimen/feed_item_status_pad_left_right"
+                android:paddingRight="@dimen/feed_item_status_pad_left_right"
+                android:paddingTop="@dimen/headingdescgap"
+                android:text="-"
+                android:textColor="@color/PrimarytxtColor"
+                android:textSize="@dimen/fontThinSize" />
+
+            <TextView
+                android:id="@+id/txtmothcm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/feed_item_padding_left_right"
+                android:text="The Mother’s Comment"
+                android:textAllCaps="true"
+                android:textColor="@color/PrimarytxtColor"
+                android:textSize="@dimen/feed_item_profile_name"
+               />
+
+            <TextView
+                android:id="@+id/txtmothercommmain"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/feed_item_status_pad_top"
+                android:paddingTop="@dimen/headingdescgap"
+                android:paddingLeft="@dimen/feed_item_status_pad_left_right"
+                android:paddingRight="@dimen/feed_item_status_pad_left_right"
+
+                android:text="-"
+                android:textColor="@color/PrimarytxtColor"
+                android:textSize="@dimen/fontThinSize" />
+
+
+            <TextView
+                android:id="@+id/txtds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/feed_item_padding_left_right"
+                android:text="Description"
+                android:textAllCaps="true"
+                android:textColor="@color/PrimarytxtColor"
+                android:textSize="@dimen/feed_item_profile_name"
+                />
+
+            <TextView
+                android:id="@+id/txtdescMainFeed"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/feed_item_status_pad_top"
+                android:paddingTop="@dimen/headingdescgap"
+                android:paddingLeft="@dimen/feed_item_status_pad_left_right"
+                android:paddingRight="@dimen/feed_item_status_pad_left_right"
+                android:text="-"
+                android:textColor="@color/PrimarytxtColor"
+                android:textSize="@dimen/fontlightSize" />
+
+            <TextView
+                android:id="@+id/txtnamequote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/feed_item_padding_left_right"
+                android:text="Quotes"
+                android:textAllCaps="true"
+                android:textColor="@color/PrimarytxtColor"
+                android:textSize="@dimen/feed_item_profile_name"
+                />
+
+            <WebView
+                android:id="@+id/txtquote"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/feed_item_status_pad_top"
+                android:paddingTop="@dimen/headingdescgap"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="@dimen/feed_item_status_pad_left_right"
+                android:text="-"
+                android:textSize="@dimen/fontlightSize" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/txtvarients"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainrelative"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="03dp"
+        android:gravity="center"
+        android:paddingBottom="03dp"
+        android:text="Variants"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/linearScondTypeFeed"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/txtvarients"
+        android:background="@drawable/bg_parent_rounded_corner"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/feed_item_padding_top_bottom">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/feedImage1"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="@color/white"
+                android:scaleType="fitXY"
+                android:visibility="visible" />
+
+            <ProgressBar
+                android:id="@+id/imgloadingprog"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtwiki"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:autoLink="web"
+            android:clickable="true"
+            android:linksClickable="true"
+            android:paddingBottom="10dp"
+            android:paddingLeft="@dimen/feed_item_status_pad_left_right"
+            android:paddingRight="@dimen/feed_item_status_pad_left_right"
+            android:text="Wikimedia Commons"
+            android:visibility="gone"
+            android:textColor="@color/PrimarytxtColor"
+            android:textSize="@dimen/fontSemiBoSize" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="07dp"
+            android:paddingTop="@dimen/feed_item_status_pad_top"
+            android:paddingLeft="@dimen/feed_item_padding_left_right"
+            android:text="Significance given by the Mother"
+            android:textAllCaps="true"
+            android:textColor="@color/PrimarytxtColor"
+            android:textSize="@dimen/feed_item_profile_name"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtsignificance_mother"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/feed_item_status_pad_top"
+            android:paddingLeft="@dimen/feed_item_status_pad_left_right"
+            android:paddingRight="@dimen/feed_item_status_pad_left_right"
+            android:paddingTop="@dimen/headingdescgap"
+            android:text="The Divine Grace "
+            android:textColor="@color/PrimarytxtColor"
+            android:textSize="@dimen/fontThinSize" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/feed_item_padding_left_right"
+            android:text="The Mother’s Comment"
+            android:textAllCaps="true"
+            android:textColor="@color/PrimarytxtColor"
+            android:textSize="@dimen/feed_item_profile_name"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtmothercomment"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/feed_item_status_pad_top"
+            android:paddingLeft="@dimen/feed_item_status_pad_left_right"
+            android:paddingRight="@dimen/feed_item_status_pad_left_right"
+            android:paddingTop="@dimen/headingdescgap"
+            android:text="-"
+            android:textColor="@color/PrimarytxtColor"
+            android:textSize="@dimen/fontThinSize" />
+
+        <TextView
+            android:id="@+id/txtsubquotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/feed_item_padding_left_right"
+            android:text="Quotes"
+            android:layout_marginTop="05dp"
+            android:textAllCaps="true"
+            android:textColor="@color/PrimarytxtColor"
+            android:textSize="@dimen/feed_item_profile_name"
+            android:textStyle="bold" />
+
+        <WebView
+            android:id="@+id/txtquotessub"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/feed_item_status_pad_top"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="@dimen/feed_item_status_pad_left_right"
+            android:paddingTop="@dimen/headingdescgap"
+            android:text="-"
+            android:textColor="@color/PrimarytxtColor"
+            android:textSize="@dimen/fontlightSize" />
+
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="05dp"
+            android:paddingLeft="@dimen/feed_item_padding_left_right"
+            android:text="Description"
+            android:textAllCaps="true"
+            android:textColor="@color/PrimarytxtColor"
+            android:textSize="@dimen/feed_item_profile_name"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtdescption"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/feed_item_status_pad_top"
+            android:paddingLeft="@dimen/feed_item_status_pad_left_right"
+            android:paddingRight="@dimen/feed_item_status_pad_left_right"
+            android:paddingTop="@dimen/headingdescgap"
+            android:text="-"
+            android:textColor="@color/PrimarytxtColor"
+            android:textSize="@dimen/fontlightSize" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/feed_item_padding_left_right"
+            android:text="Colour"
+            android:layout_marginTop="05dp"
+            android:textAllCaps="true"
+            android:textColor="@color/PrimarytxtColor"
+            android:textSize="@dimen/feed_item_profile_name"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtColors"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/feed_item_status_pad_top"
+            android:paddingLeft="@dimen/feed_item_status_pad_left_right"
+            android:paddingRight="@dimen/feed_item_status_pad_left_right"
+            android:paddingTop="@dimen/headingdescgap"
+            android:text="Pure white to pink"
+            android:textColor="@color/PrimarytxtColor"
+            android:textSize="@dimen/fontlightSize" />
+
+
+
+
+        <!-- <volley.FeedImageView
+             android:id="@+id/feedImage1"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@color/white"
+             android:scaleType="fitXY"
+             android:visibility="visible" />-->
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
